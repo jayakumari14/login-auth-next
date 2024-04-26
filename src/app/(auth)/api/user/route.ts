@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
-const hash=require("bcrypt")
+import { hash } from "bcrypt";
 
 export async function POST(req:Request){
     // return NextResponse.json({success:true})
